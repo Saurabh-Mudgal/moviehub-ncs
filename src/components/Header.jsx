@@ -9,7 +9,7 @@ const Header = () => {
     <>
     <div className={styles.navBar}>
         <div className={styles.logo}>MovieHub</div>
-        <div className={styles.toggleButton} onClick={() => setIsOpen(!isOpen)}>
+        <div className={styles.toggleButton} onClick={() => setIsOpen(true)}>
             <span className={styles.bar}></span>
             <span className={styles.bar}></span>
             <span className={styles.bar}></span>
@@ -22,7 +22,7 @@ const Header = () => {
             </ul>
         </div>
     </div>
-    {isOpen && <MobileMenu />}
+    {isOpen && <MobileMenu setIsOpen={setIsOpen} />}
     </>
   )
 }

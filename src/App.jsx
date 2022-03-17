@@ -1,10 +1,9 @@
-import { Header, Hero, Body } from './components';
+import { Header, Body } from './components';
 
 function App() {
   return (
     <div className="App">
       <Header className="App-header" />
-      <Hero className="App-hero" />
       <Body className="App-body" />
     </div>
   );

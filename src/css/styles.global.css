@@ -3,10 +3,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+
 }
 
 body {
     background: rgb(0,0,0);
-    background: linear-gradient(175deg, rgba(0,0,0,1) 0%, rgba(35,0,26,1) 62%, rgba(56,51,54,0.5) 96%, rgba(59,57,57,1) 98%, rgba(59,57,57,1) 100%);
+    background: linear-gradient(175deg, rgba(0,0,0,1) 0%, rgba(35,0,26,1) 62%, rgba(56,51,54,1) 96%, rgba(59,57,57,1) 98%, rgba(59,57,57,1) 100%) fixed 100%;
     color: #bebebe;
 }
