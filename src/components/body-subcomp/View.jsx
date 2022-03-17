@@ -4,7 +4,7 @@ const View = () => {
   return (
     <>
         <div className="viewContainer">
-            <div className="viewHeader">Top 30</div>
+            <div className="viewHeader">Now Showing: First 30 since 2010</div>
             <div className="viewBody">
                 <div className="viewBodyItem">1</div>
                 <div className="viewBodyItem">2</div>
