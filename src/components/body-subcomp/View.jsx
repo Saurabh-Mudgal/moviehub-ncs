@@ -8,13 +8,24 @@ const View = ( {search, filter, setFilter}) => {
     const [movieData, setMovieData] = useState([]);
 
     useEffect(() => {
+      const route = {
+        "First 30 since 2010": "top30",
+        "Series": "series",
+        "Movies": "movies",
+        "Latest Releases": "latest",
+        "Oldest Releases": "classics",
+        "Alphabetical": "alphabetical",
+        "Reverse Alphabetical": "reverse-alphabetical"
+      }
     
-        fetch('https://movies-saurabh2.free.beeceptor.com/all-movies').then(response => {
+        fetch(`http://127.0.0.1:5000/${route[filter]}`).then(response => {
           return response.json();
         }
-        ).then(data => {setMovieData(data);})
+        ).then(data => {setMovieData(data); console.log(data)});
+
+        console.log(filter)
     
-      }, [])
+      }, [filter])
 
   return (
     <>

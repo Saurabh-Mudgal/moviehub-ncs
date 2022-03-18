@@ -3,6 +3,7 @@ import styles from '../../css/Card.module.css';
 
 
 const Card = ( {movieData, searchFilter}) => {
+  if (movieData.length === 0) {return <div className={styles.card}>No movies found</div>}
   const movieList = movieData.entries
   const viewFilteredCards = movieList.filter(data => {
     return data.title.toLowerCase().includes(searchFilter.toLowerCase())
