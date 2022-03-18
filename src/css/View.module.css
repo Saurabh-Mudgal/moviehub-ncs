@@ -1,0 +1,49 @@
+.viewContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.viewHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 20rem;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 0 0.5rem #000;
+    font-weight: lighter;
+}
+
+.decor {
+    background: linear-gradient(90deg, rgba(3, 169, 244, 1), rgba(244, 65, 165, 1), rgba(255, 235, 59, 1), rgba(3, 169, 244, 1));
+    background-size: 75%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: normal;
+}
+
+.resetButton {
+    cursor: pointer;
+    margin-top: 2rem;
+    color: lightblue;
+    transition: linear 75ms;
+}
+
+.resetButton:hover {
+    color: cornflowerblue;
+    scale: 0.95;
+}
+
+.viewBody {
+    min-height: 100vh;
+}

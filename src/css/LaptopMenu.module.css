@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    right: 6.66vw;
+    border-radius: 1vw;
+    border: 0.1vw solid #e5e5e5;
+    font-size: auto;
+    background: linear-gradient(90deg, rgba(3, 169, 244, 0.66), rgba(244, 65, 165, 0.66), rgba(255, 235, 59, 0.66), rgba(3, 169, 244, 0.66));
+    background-size: 400%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: translate(0vw, 0.5vw, 0vw);
+    text-align: center;
+}
+
+.laptopMenuItemContentItem {
+    padding: 1.1vw;
+    cursor: pointer;
+    width: 100%;
+    transition: linear 250ms;
+}
+
+.laptopMenuItemContentItem:hover {
+    background-color: rgba(0,0,0,0.4);
+    text-shadow: #e5e5e5 1px 1px 1px;
+}
+
+@media screen and (max-width: 1080px) {
+    .container {
+        transform: scale(0.85);
+        right: 2.3vw;
+        top: 5.3rem;
+
+
+    }
+}
+@media screen and (max-width: 768px) {
+    .container {
+        display: none;
+    }
+}

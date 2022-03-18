@@ -25,10 +25,10 @@
     height: 3.33rem;
     border-radius: 0.5rem;
     border: 1px solid #e5e5e5;
-    padding: 1rem;
+    padding: 1.66rem;
     font-size: 1.33rem;
     background: linear-gradient(90deg, rgba(3, 169, 244, 0.66), rgba(244, 65, 165, 0.66), rgba(255, 235, 59, 0.66), rgba(3, 169, 244, 0.66));
-    background-size: 400%;
+    background-size: 50%;
     border-radius: 5rem;
     -webkit-background-clip: text;
     background-clip: text;

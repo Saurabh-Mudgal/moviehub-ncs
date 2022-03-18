@@ -1,0 +1,103 @@
+/* .cardLayout {
+} */
+
+/* .card {
+    background-color: #fff;
+    display: inline-block;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 0.75rem;
+    -moz-osx-font-smoothing: grayscale;
+
+    position: relative;
+    display: flex;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+} */
+
+/* .cardImage {
+    max-width: 100%;
+    max-height: auto;
+}
+.cardDescription {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+.view {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media screen and (max-width: 1080px) {
+    .view {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .view {
+        grid-template-columns: 1fr;
+    }
+}
+
+.cardContainer {
+    display: grid;
+    grid-template-rows: "cardPic" "cardDescription" "cardName";
+    margin: 0.66vw;
+    border: 0.25vw solid white;
+    max-width: 30rem;
+}
+
+.cardDescription {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(3, 169, 244, 0.1), rgba(244, 65, 165, 0.1), rgba(255, 235, 59, 0.1), rgba(3, 169, 244, 0.1));
+    background-size: 400%;
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.25);
+
+}
+
+.cardType {
+    margin-left: 1rem;
+    background: linear-gradient(90deg, rgba(3, 169, 244, 0.66), rgba(244, 65, 165, 0.66), rgba(255, 235, 59, 0.66), rgba(3, 169, 244, 0.66));
+    background-size: 400%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 1rem;
+}
+.cardYear {
+    margin-right: 1rem;
+    background: linear-gradient(90deg, rgba(3, 169, 244, 0.66), rgba(244, 65, 165, 0.66), rgba(255, 235, 59, 0.66), rgba(3, 169, 244, 0.66));
+    background-size: 400%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 1rem;
+}
+
+.cardName {
+    align-self: center;
+    justify-self: center;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    margin: 1.5rem;
+}
+
+img {
+    align-self: center;
+    justify-self: center;
+    width: 100%;
+    height: auto;
+}
+
+.cardPic {
+    max-height: auto;
+    max-width: 100%;
+}

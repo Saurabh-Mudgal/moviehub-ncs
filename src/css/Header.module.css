@@ -58,21 +58,20 @@
 
 .navLinks li {
     list-style: none;
+    font-size: larger;
     margin: 0 5vw;
     background: linear-gradient(90deg, rgba(3, 169, 244, 0.66), rgba(244, 65, 165, 0.66), rgba(255, 235, 59, 0.66), rgba(3, 169, 244, 0.66));
     background-size: 400%;
-    border-radius: 5rem;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: linear 250ms;
 }
 
-.navIcon:hover {
+.navLinks li:hover, .navLinks li:active {
     cursor: pointer;
     background: linear-gradient(90deg, rgba(3, 169, 244, 0.66), rgba(244, 65, 165, 0.66), rgba(255, 235, 59, 0.66), rgba(3, 169, 244, 0.66));
     background-size: 400%;
-    border-radius: 5rem;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -151,4 +150,12 @@
     width: 30px;
     height: 30px;
     margin-right: 10px;
+} */
+
+/* .dropdownContainer {
+    position: relative;
+}
+
+.dropdownStyle {
+    position: absolute;
 } */
