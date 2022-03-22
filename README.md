@@ -1,8 +1,31 @@
-# Getting Started with Create React App
+# MovieHub
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Installation & running on your device
+
+Ensure you have npm installed on your device. If you don't, follow the instructions [here](https://nodejs.org/en/) to install node and npm. Once done, check that everything was installed by running the following on your CLI:
+```git
+$ node -v
+$ npm -v
+```
+Download or clone this repository. Navigate to the root folder where you cloned this repository and proceed to install the dependencies as follows:
+```git
+$ npm install
+$ pip install flask
+```
+To run the app and demo it yourself, run the following two commands in root folder (in two seperate terminal windows):
+```git
+$ npm run start
+```
+```git
+$ python python-server/server.py
+```
+
+
+
+____________________________________________
+
 
 In the project directory, you can run:
 
