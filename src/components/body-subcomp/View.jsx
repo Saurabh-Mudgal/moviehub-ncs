@@ -9,6 +9,7 @@ const View = ( {search, filter, setFilter}) => {
 
     useEffect(() => {
       const route = {
+        "All Results": "all-results",
         "First 30 since 2010": "top30",
         "Series": "series",
         "Movies": "movies",
@@ -18,10 +19,8 @@ const View = ( {search, filter, setFilter}) => {
         "Reverse Alphabetical": "reverse-alphabetical"
       }
     
-        fetch(`http://127.0.0.1:5000/${route[filter]}`).then(response => {
-          return response.json();
-        }
-        ).then(data => {setMovieData(data); console.log(data)});
+        fetch(`http://127.0.0.1:5000/${route[filter]}`).then(response => {console.log(response); return response.json()})
+        .then(data => {setMovieData(data); console.log(data)});
 
         console.log(filter)
     
